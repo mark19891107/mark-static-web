@@ -15,11 +15,9 @@
 # limitations under the License.
 #
 import webapp2
+import elasticsearch
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
-        self.response.write('Hello world!')
+        self.response.write('Hello world2!')
 
-app = webapp2.WSGIApplication([
-    ('/', MainHandler)
-], debug=True)
